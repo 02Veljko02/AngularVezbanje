@@ -10,7 +10,6 @@ html, body {
 .header {
   background-color: #000000;
   color: white;
-  text-align: center;
   padding: 1rem;
   width: 100%;
   box-sizing: border-box; /* Uključuje padding u ukupnu širinu */
@@ -18,5 +17,50 @@ html, body {
   top: 0; /* Pozicioniranje na vrhu */
   left: 0; /* Pozicioniranje sa leve strane */
   z-index: 1000; /* Ako želiš da bude iznad drugih elemenata */
+  display: flex; /* Koristi flexbox za raspoređivanje elemenata */
+  align-items: center; /* Vertikalno centriranje elemenata */
+  justify-content: space-between; /* Raspoređivanje elemenata */
 }
 
+/* Kontejner za meni */
+.menu-container {
+  margin-right: auto; /* Pomeri meni na levu stranu */
+}
+
+/* Stilizacija padajućeg menija */
+.dropdown-menu {
+  background-color: #333; /* Tamna pozadina za meni */
+  color: white; /* Bele boje za tekst */
+  border: 1px solid #444; /* Tamni okvir oko menija */
+  border-radius: 5px; /* Zaobljeni uglovi */
+  padding: 0.5rem; /* Dodaj padding */
+  font-size: 1rem; /* Veličina fonta */
+  cursor: pointer; /* Ruka za pokazivač kada se pređe preko menija */
+  outline: none; /* Ukloni okvir prilikom fokusa */
+  transition: background-color 0.3s ease; /* Glatka promena boje pozadine */
+}
+
+/* Stilizacija opcija menija */
+.dropdown-menu option {
+  background-color: #333; /* Tamna pozadina za opcije */
+  color: white; /* Bele boje za tekst opcija */
+  padding: 0.5rem; /* Dodaj padding za opcije */
+}
+
+/* Hover efekat na meni */
+.dropdown-menu:hover {
+  background-color: #444; /* Svetlija pozadina kada se pređe preko menija */
+}
+
+/* Kontejner za naslov */
+.title-container {
+  flex: 1; /* Omogući naslovu da zauzme raspoloživi prostor između menija i desne ivice */
+  display: flex;
+  justify-content: center; /* Centriraj naslov horizontalno */
+}
+
+/* Header h1 stilizacija */
+.header h1 {
+  margin: 0;
+  text-align: center; /* Centriraj tekst unutar h1 */
+}
