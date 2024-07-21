@@ -1,0 +1,22 @@
+/* Osiguraj da telo stranice nema marginu i padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header stilizacija */
+.header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box; /* Uključuje padding u ukupnu širinu */
+  position: fixed; /* Ako želiš da bude fiksiran na vrhu */
+  top: 0; /* Pozicioniranje na vrhu */
+  left: 0; /* Pozicioniranje sa leve strane */
+  z-index: 1000; /* Ako želiš da bude iznad drugih elemenata */
+}
+
